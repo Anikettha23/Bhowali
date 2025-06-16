@@ -346,7 +346,7 @@ export default function Home() {
           {/* Overlay */}
           <div className="bg-black/60 backdrop-blur-sm text-white p-6 md:absolute md:top-0 md:right-0 md:bottom-0 md:w-[35%] w-full">
             <h1
-              className="text-xl md:text-2xl font-bold text-[#74613c] mb-4"
+              className="text-xl md:text-2xl font-bold text-[#ffffff] mb-4"
               style={{ fontFamily: `"Cormorant Garamond", serif` }}
             >
               Key Distances From Bhowali Valley Chalets:

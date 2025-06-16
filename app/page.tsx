@@ -147,16 +147,21 @@ export default function Home() {
   id="highlights"
   className="relative z-10 bg-white py-12 px-4 sm:px-6 md:px-10 lg:px-24"
 >
-  <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-10 items-start">
-    
-    {/* Left Image */}
-    <div className="w-full md:w-1/2 flex justify-center md:justify-start px-4 sm:px-6">
-  <img
-    src="/ananda logo.png"
-    alt="Bhowali Chalets"
-    className="w-full max-w-[250px] sm:max-w-[300px] md:max-w-[350px] lg:max-w-[400px] h-auto object-contain"
-  />
-</div>
+  <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-10 items-center md:items-start px-4 sm:px-6">
+  
+  {/* Left Image (Logo) */}
+  <div className="w-full md:w-1/2 flex justify-center md:justify-start">
+    <img
+      src="/ananda logo.png"
+      alt="Bhowali Chalets"
+      className="w-full max-w-[250px] sm:max-w-[300px] md:max-w-[250px] lg:max-w-[400px] h-auto object-contain"
+    />
+  </div>
+
+ 
+
+
+
 
 
     {/* Right Highlights Content */}

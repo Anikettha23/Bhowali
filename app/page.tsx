@@ -154,7 +154,7 @@ export default function Home() {
     <img
       src="/ananda logo.png"
       alt="Bhowali Chalets"
-      className="w-full max-w-[250px] sm:max-w-[300px] md:max-w-[250px] lg:max-w-[400px] h-auto object-contain"
+      className="w-full max-w-[250px] sm:max-w-[300px] md:max-w-[250px] mr-[50px] lg:max-w-[400px] h-auto object-contain"
     />
   </div>
 
@@ -667,7 +667,7 @@ export default function Home() {
     className="relative z-10 max-w-7xl mx-auto px-4 text-center"
     style={{ fontFamily: `"Cormorant Garamond", serif` }}
   >
-    <h2 className="text-3xl md:text-4xl font-bold mb-16 text-[#74613c]">What our Clients Think</h2>
+    <h2 className="text-3xl md:text-4xl font-bold mb-16 text-[#ffffff]">What our Clients Think</h2>
 
     <div className="grid grid-cols-1 md:grid-cols-2 gap-12 text-white text-left">
       {/* Testimonial 1 */}

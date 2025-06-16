@@ -59,28 +59,41 @@ export default function Home() {
 
       {/* Navbar */}
       <header className="bg-[#ffff] fixed top-0 w-full z-50">
-        <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
-          <img src="/logo estate .png" alt="Logo" className="h-12 w-auto" />
-          <nav
-            className="hidden md:flex gap-6 text-[#74613c] font-semibold text-[17px]"
-            style={{ fontFamily: `"Cormorant Garamond", serif` }}
-          >
-            <a href="#">Home</a>
-            <a href="#highlights">Highlights</a>
-            <a href="#overview">Overview</a>
-            <a href="#location">Location</a>
-            <a href="#Layouts">Layouts</a>
-            <a href="#Gallery">Gallery</a>
-            <a href="#Walkthrough">Walkthrough</a>
-            <a href="#Status">Status</a>
-            <a href="#Contact">Contact</a>
-          </nav>
-          <div className="hidden md:flex items-center gap-2 text-[#74613c] text-lg font-bold">
-            <span>📞</span>
-            <span>+91 9990467969</span>
-          </div>
-        </div>
-      </header>
+  <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+    
+    {/* Logo */}
+    <img src="/logo estate .png" alt="Logo" className="h-12 w-auto" />
+
+    {/* Desktop Nav */}
+    <nav
+      className="hidden md:flex gap-6 text-[#74613c] font-semibold text-[17px]"
+      style={{ fontFamily: `"Cormorant Garamond", serif` }}
+    >
+      <a href="#">Home</a>
+      <a href="#highlights">Highlights</a>
+      <a href="#overview">Overview</a>
+      <a href="#location">Location</a>
+      <a href="#Layouts">Layouts</a>
+      <a href="#Gallery">Gallery</a>
+      <a href="#Walkthrough">Walkthrough</a>
+      <a href="#Status">Status</a>
+      <a href="#Contact">Contact</a>
+    </nav>
+
+    {/* Desktop Phone Number */}
+    <div className="hidden md:flex items-center gap-2 text-[#74613c] text-lg font-bold">
+      <span>📞</span>
+      <span>+91 9990467969</span>
+    </div>
+
+    {/* Mobile Phone Number Only */}
+    <div className="flex md:hidden items-center gap-2 text-[#74613c] text-sm font-semibold">
+      <span>📞</span>
+      <a href="tel:+919990467969" className="hover:underline">+91 9990467969</a>
+    </div>
+  </div>
+</header>
+
 
       
 
@@ -137,13 +150,14 @@ export default function Home() {
   <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-10 items-start">
     
     {/* Left Image */}
-    <div className="w-full md:w-1/2 flex justify-center md:justify-start">
-      <img
-        src="/ananda logo.png"
-        alt="Bhowali Chalets"
-        className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg h-auto object-contain"
-      />
-    </div>
+    <div className="w-full md:w-1/2 flex justify-center md:justify-start px-4 sm:px-6">
+  <img
+    src="/ananda logo.png"
+    alt="Bhowali Chalets"
+    className="w-full max-w-[250px] sm:max-w-[300px] md:max-w-[350px] lg:max-w-[400px] h-auto object-contain"
+  />
+</div>
+
 
     {/* Right Highlights Content */}
     <div className="w-full md:w-1/2">

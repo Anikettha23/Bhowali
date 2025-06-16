@@ -18,29 +18,31 @@ export default function Home() {
 
   
   
-  const [selectedImage, setSelectedImage]= useState(null);
   const images = [
- 
-    
-    "/imgg1.jpg", "/imgg2.jpg", "/imgg3.jpg", "/imgg4.jpg", "/imgg5.jpg",
-    "/imgg6.jpg", "/imgg7.jpg", "/imgg8.jpg", "/imgg9.jpg", "/imgg10.jpg",
-    "/imgg11.jpg", "/imgg3.jpg"
-    
+    '/images/image1.jpg',
+    '/images/image2.jpg',
+    '/images/image3.jpg',
+    '/images/image4.jpg',
+    '/images/image5.jpg',
+    // Add more image paths here
   ];
-  
 
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState<number | null>(null);
 
   const handlePrev = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? images.length - 1 : prevIndex - 1
-    );
+    if (currentIndex !== null) {
+      setCurrentIndex((prev) =>
+        prev === 0 ? images.length - 1 : (prev as number) - 1
+      );
+    }
   };
 
   const handleNext = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === images.length - 1 ? 0 : prevIndex + 1
-    );
+    if (currentIndex !== null) {
+      setCurrentIndex((prev) =>
+        prev === images.length - 1 ? 0 : (prev as number) + 1
+      );
+    }
   };
 
   return (
@@ -451,14 +453,22 @@ export default function Home() {
 
        <section id="Gallery" className="bg-[#ffffff] py-12 px-4 scroll-mt-16">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-5xl font-semibold text-center text-[#74613c] mb-6"
-        style={{ fontFamily: `"Cormorant Garamond", serif`, fontSize:"36px"}}>
+        <h2
+          className="text-5xl font-semibold text-center text-[#74613c] mb-6"
+          style={{
+            fontFamily: `"Cormorant Garamond", serif`,
+            fontSize: '36px',
+          }}
+        >
           Image Gallery
         </h2>
 
-        <p className=" text-sm tracking-widest text-[#74613c] mb-10 text-center font-medium" style={{ fontFamily: `"cormorant garamond",serif` }}>
-               Do Browse Stunning Photos Showcasing Beauty </p>
-
+        <p
+          className="text-sm tracking-widest text-[#74613c] mb-10 text-center font-medium"
+          style={{ fontFamily: `"Cormorant Garamond", serif` }}
+        >
+          Do Browse Stunning Photos Showcasing Beauty
+        </p>
 
         <div className="columns-1 sm:columns-2 md:columns-3 gap-4 space-y-4">
           {images.map((src, index) => (
@@ -482,6 +492,7 @@ export default function Home() {
               className="max-h-[80vh] max-w-[90vw] rounded-lg shadow-xl"
             />
 
+            {/* Close button */}
             <button
               onClick={() => setCurrentIndex(null)}
               className="absolute top-2 right-2 bg-white text-black px-3 py-1 rounded-full font-bold hover:bg-gray-200"
@@ -489,6 +500,7 @@ export default function Home() {
               ✕
             </button>
 
+            {/* Previous */}
             <button
               onClick={handlePrev}
               className="absolute top-1/2 left-2 transform -translate-y-1/2 bg-white text-black px-3 py-1 rounded-full font-bold hover:bg-gray-200"
@@ -496,6 +508,7 @@ export default function Home() {
               ‹
             </button>
 
+            {/* Next */}
             <button
               onClick={handleNext}
               className="absolute top-1/2 right-2 transform -translate-y-1/2 bg-white text-black px-3 py-1 rounded-full font-bold hover:bg-gray-200"

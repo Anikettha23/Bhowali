@@ -154,7 +154,7 @@ export default function Home() {
     <img
       src="/ananda logo.png"
       alt="Bhowali Chalets"
-      className="w-full max-w-[250px] sm:max-w-[300px] md:max-w-[250px] mr-[50px] lg:max-w-[400px] h-auto object-contain"
+      className="w-full max-w-[250px] sm:max-w-[300px] md:max-w-[250px] ml-[70px] lg:max-w-[400px] h-auto object-contain"
     />
   </div>
 

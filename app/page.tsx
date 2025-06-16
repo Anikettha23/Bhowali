@@ -261,7 +261,7 @@ export default function Home() {
       {/* Left Glass Text Overlay */}
       <div className="absolute top-0 left-0 bottom-0 w-[50%] md:w-[30%] bg-black/30 backdrop-blur-md text-white p-6 flex flex-col justify-start z-10 pt-6">
         <h1
-          className="text- md:text-3xl font-bold text-[#74613c] pb-6"
+          className="text- md:text-3xl font-bold text-[#ffffff] pb-6"
           style={{ fontFamily: `"Cormorant Garamond", serif` }}
         >
           Breathe Unwind Immerse. Your Himalayan haven awaits.

@@ -19,11 +19,9 @@ export default function Home() {
   
   
   const images = [
-    '/images/image1.jpg',
-    '/images/image2.jpg',
-    '/images/image3.jpg',
-    '/images/image4.jpg',
-    '/images/image5.jpg',
+    "/imgg1.jpg", "/imgg2.jpg", "/imgg3.jpg", "/imgg4.jpg", "/imgg5.jpg",
+    "/imgg6.jpg", "/imgg7.jpg", "/imgg8.jpg", "/imgg9.jpg", "/imgg10.jpg",
+    "/imgg11.jpg", "/imgg3.jpg"
     // Add more image paths here
   ];
 

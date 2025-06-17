@@ -147,17 +147,34 @@ export default function Home() {
   id="highlights"
   className="relative z-10 bg-white py-12 px-4 sm:px-6 md:px-10 lg:px-24"
 >
-  <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-10 items-center md:items-start px-4 sm:px-6">
-  
-  {/* Left Image (Logo) */}
-  <div className="w-full md:w-1/2 flex justify-center md:justify-start">
-    <img
-      src="/ananda logo.png"
-      alt="Bhowali Chalets"
-      className="w-full max-w-[250px] sm:max-w-[300px] ml-[35px] md:max-w-[250px] ml-[35px] lg:max-w-[400px] h-auto object-contain"
-    />
-  </div>
+  <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-10 items-center md:items-start px-0 sm:px-4">
+    
+    {/* Left Image (Logo) */}
+    <div className="w-full md:w-1/2 flex justify-center md:justify-start">
+      <img
+        src="/ananda logo.png"
+        alt="Bhowali Chalets"
+        className="w-[180px] sm:w-[220px] md:w-[250px] lg:w-[300px] h-auto object-contain"
+      />
+    </div>
 
+    {/* Right Content (Example) */}
+    <div className="w-full md:w-1/2 text-center md:text-left">
+      <h2
+        className="text-3xl sm:text-4xl font-semibold text-[#74613c] mb-4"
+        style={{ fontFamily: `"Cormorant Garamond", serif` }}
+      >
+        Key Highlights
+      </h2>
+      <p
+        className="text-sm sm:text-base tracking-wide text-[#74613c] mb-8"
+        style={{ fontFamily: `"Cormorant Garamond", serif` }}
+      >
+        What sets Bhowali Valley Chalets apart
+      </p>
+
+     
+    </div>
  
 
 

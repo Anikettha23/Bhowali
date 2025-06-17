@@ -369,101 +369,93 @@ export default function Home() {
 
 
 
-        <section id="Layouts" className="bg-[#ffffff] py-12 px-4 scroll-mt-16">
-      <div className="max-w-7xl mx-auto" style={{ fontFamily: `"Cormorant Garamond", serif` }}>
-        {/* Section Heading */}
-        <h2 className="text-4xl font-semibold text-center mb-6 text-[#74613c]">
-          Site Layout & Floor Plans
-        </h2>
-        <p className=" text-sm tracking-widest text-[#74613c] mb-10 text-center font-medium" style={{ fontFamily: `"cormorant garamond",serif` }}>
-               Detailed layouts To Help You Visualize Spaces </p>
+        <section id="Layouts" className="bg-white py-12 px-4 scroll-mt-16">
+  <div className="max-w-7xl mx-auto" style={{ fontFamily: `"Cormorant Garamond", serif` }}>
+    
+    {/* Section Heading */}
+    <h2 className="text-3xl sm:text-4xl font-semibold text-center mb-4 text-[#74613c]">
+      Site Layout & Floor Plans
+    </h2>
+    <p className="text-xs sm:text-sm tracking-widest text-[#74613c] mb-8 text-center font-medium">
+      Detailed layouts to help you visualize spaces
+    </p>
 
-        {/* Decorative Divider */}
-        {/* <div className="mb-10 text-center">
-          <div className="inline-block border-gray-400 py-1 px-4 text-black">
-            ⌘-------------------------------------------------------⌘
-          </div>
-        </div> */}
-
-        {/* Layout + Carousel Side by Side */}
-        <div className="flex flex-col lg:flex-row items-start gap-8 justify-between">
-          {/* Site Layout Image */}
-          <div className="w-full lg:w-[46%] flex justify-start">
-            <div className="w-full max-w-[400px] border border-gray-300 rounded shadow-md overflow-hidden">
-              <img
-                src="/layout1.avif"
-                alt="Site Plan"
-                className="w-full object-contain transition-transform hover:scale-105 duration-300"
-              />
-            </div>
-          </div>
-
-          {/* Swiper Carousel */}
-          <div className="w-full lg:w-[58%]">
-            <Swiper
-              spaceBetween={20}
-              pagination={{ clickable: true }}
-              navigation={true}
-              modules={[Pagination, Navigation]}
-              className="mySwiper"
-            >
-              {[1, 2, 3, 4].map((type) => (
-                <SwiperSlide key={type}>
-                  <div className="p-5 bg-white rounded-lg shadow-lg h-[310px] flex gap-4 items-start">
-                    <img
-                      src={`/layout${type + 1}.avif`}
-                      alt={`Layout ${type}`}
-                      className="w-62 h-auto rounded object-contain"
-                    />
-                    <div className="flex flex-col justify-between">
-                      <div>
-                        <h3 className="text-sm font-bold text-gray-500">TYPE {type}</h3>
-                        <p className="text-lg font-semibold text-gray-800 mb-9">
-                          {type === 4
-                            ? '4 BDR + Lounge + Garden View'
-                            : `${type + 1} BDR + LOUNGE + TERRACE`}
-                        </p>
-                        <p
-                          className={`font-semibold ${
-                            type === 4 ? 'text-green-600' : 'text-red-600'
-                          }`}
-                        >
-                          {type === 4 ? 'Available' : '(SOLD OUT)'}
-                        </p>
-                      </div>
-                      <div className="mt-4 text-sm text-gray-700">
-                        <p>
-                          Size:{' '}
-                          {type === 1
-                            ? '200'
-                            : type === 2
-                            ? '240'
-                            : type === 3
-                            ? '280'
-                            : '320'}{' '}
-                          SQ YARDS
-                        </p>
-                        <p>
-                          Built-up Area:{' '}
-                          {type === 1
-                            ? '1,500'
-                            : type === 2
-                            ? '2,200'
-                            : type === 3
-                            ? '2,600'
-                            : '2,900'}{' '}
-                          SQ FEET
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </SwiperSlide>
-              ))}
-            </Swiper>
-          </div>
+    {/* Content Wrapper */}
+    <div className="flex flex-col lg:flex-row gap-10 items-center lg:items-start">
+      
+      {/* Left Layout Image */}
+      <div className="w-full lg:w-1/2 flex justify-center lg:justify-start">
+        <div className="w-full max-w-[400px] border border-gray-300 rounded shadow-md overflow-hidden">
+          <img
+            src="/layout1.avif"
+            alt="Site Plan"
+            className="w-full object-contain transition-transform hover:scale-105 duration-300"
+          />
         </div>
       </div>
-    </section>
+
+      {/* Right Swiper Carousel */}
+      <div className="w-full lg:w-1/2">
+        <Swiper
+          spaceBetween={20}
+          pagination={{ clickable: true }}
+          navigation={true}
+          modules={[Pagination, Navigation]}
+          className="mySwiper"
+        >
+          {[1, 2, 3, 4].map((type) => (
+            <SwiperSlide key={type}>
+              <div className="p-4 sm:p-5 bg-white rounded-lg shadow-lg flex flex-col sm:flex-row gap-4 h-auto sm:h-[310px]">
+                <img
+                  src={`/layout${type + 1}.avif`}
+                  alt={`Layout ${type}`}
+                  className="w-full sm:w-60 h-auto object-contain rounded"
+                />
+                <div className="flex flex-col justify-between text-center sm:text-left">
+                  <div>
+                    <h3 className="text-sm font-bold text-gray-500">TYPE {type}</h3>
+                    <p className="text-lg font-semibold text-gray-800 mb-2 sm:mb-4">
+                      {type === 4
+                        ? '4 BDR + Lounge + Garden View'
+                        : `${type + 1} BDR + LOUNGE + TERRACE`}
+                    </p>
+                    <p className={`font-semibold ${type === 4 ? 'text-green-600' : 'text-red-600'}`}>
+                      {type === 4 ? 'Available' : '(SOLD OUT)'}
+                    </p>
+                  </div>
+                  <div className="mt-3 text-sm text-gray-700 space-y-1">
+                    <p>
+                      Size:{' '}
+                      {type === 1
+                        ? '200'
+                        : type === 2
+                        ? '240'
+                        : type === 3
+                        ? '280'
+                        : '320'}{' '}
+                      SQ YARDS
+                    </p>
+                    <p>
+                      Built-up Area:{' '}
+                      {type === 1
+                        ? '1,500'
+                        : type === 2
+                        ? '2,200'
+                        : type === 3
+                        ? '2,600'
+                        : '2,900'}{' '}
+                      SQ FEET
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+    </div>
+  </div>
+</section>
 
        
 

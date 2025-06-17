@@ -361,110 +361,118 @@ export default function Home() {
 
 
 
+<section id="Layouts" className="bg-white py-12 px-4 scroll-mt-16">
+  <div
+    className="max-w-7xl mx-auto"
+    style={{ fontFamily: `"Cormorant Garamond", serif` }}
+  >
+    {/* Heading */}
+    <h2 className="text-3xl sm:text-4xl font-semibold text-center mb-4 text-[#74613c]">
+      Site Layout & Floor Plans
+    </h2>
+    <p className="text-xs sm:text-sm tracking-widest text-[#74613c] mb-10 text-center font-medium">
+      Detailed layouts to help you visualize spaces
+    </p>
 
-        <section id="Layouts" className="bg-white py-12 px-4 scroll-mt-16">
-      <div
-        className="max-w-7xl mx-auto"
-        style={{ fontFamily: `"Cormorant Garamond", serif` }}
-      >
-        {/* Heading */}
-        <h2 className="text-3xl sm:text-4xl font-semibold text-center mb-4 text-[#74613c]">
-          Site Layout & Floor Plans
-        </h2>
-        <p className="text-xs sm:text-sm tracking-widest text-[#74613c] mb-10 text-center font-medium">
-          Detailed layouts to help you visualize spaces
-        </p>
-
-        {/* Layout & Carousel Section */}
-        <div className="flex flex-col lg:flex-row gap-10 items-center lg:items-start px-2">
-          {/* Left Image */}
-          <div className="w-full lg:w-[45%] flex justify-center lg:justify-start">
-            <div className="w-full max-w-[400px] border border-gray-300 rounded shadow-md overflow-hidden">
-              <img
-                src="/layout1.avif"
-                alt="Site Plan"
-                className="w-full object-contain transition-transform hover:scale-105 duration-300"
-              />
-            </div>
-          </div>
-
-          {/* Right Swiper */}
-          <div className="w-full lg:w-[55%]">
-            <Swiper
-              spaceBetween={30}
-              pagination={{ clickable: true }}
-              navigation={true}
-              modules={[Pagination, Navigation]}
-              className="mySwiper"
-            >
-              {[1, 2, 3, 4].map((type) => (
-                <SwiperSlide key={type}>
-                  <div className="p-4 sm:p-5 bg-white rounded-lg shadow-lg flex flex-col sm:flex-row gap-4 min-h-[350px]">
-                    <img
-                      src={`/layout${type + 1}.avif`}
-                      alt={`Layout ${type}`}
-                      className="w-full sm:w-60 h-auto object-contain rounded"
-                    />
-                    <div className="flex flex-col justify-between text-center sm:text-left w-full">
-                      <div>
-                        <h3 className="text-sm font-bold text-gray-500">
-                          TYPE {type}
-                        </h3>
-                        <p className="text-lg font-semibold text-gray-800 mb-2 sm:mb-4">
-                          {type === 4
-                            ? '4 BDR + Lounge + Garden View'
-                            : `${type + 1} BDR + LOUNGE + TERRACE`}
-                        </p>
-                        <p
-                          className={`font-semibold ${
-                            type === 4 ? 'text-green-600' : 'text-red-600'
-                          }`}
-                        >
-                          {type === 4 ? 'Available' : '(SOLD OUT)'}
-                        </p>
-                      </div>
-                      <div className="mt-4 text-sm text-gray-700 space-y-1">
-                        <p>
-                          Size:{' '}
-                          {type === 1
-                            ? '200'
-                            : type === 2
-                            ? '240'
-                            : type === 3
-                            ? '280'
-                            : '320'} SQ YARDS
-                        </p>
-                        <p>
-                          Built-up Area:{' '}
-                          {type === 1
-                            ? '1,500'
-                            : type === 2
-                            ? '2,200'
-                            : type === 3
-                            ? '2,600'
-                            : '2,900'} SQ FEET
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </SwiperSlide>
-              ))}
-            </Swiper>
-          </div>
+    {/* Layout & Carousel Section */}
+    <div className="flex flex-col lg:flex-row gap-10 items-center lg:items-start px-2">
+      {/* Left Image */}
+      <div className="w-full lg:w-[45%] flex justify-center lg:justify-start">
+        <div className="w-full max-w-[400px] border border-gray-300 rounded shadow-md overflow-hidden">
+          <img
+            src="/layout1.avif"
+            alt="Site Plan"
+            className="w-full object-contain transition-transform hover:scale-105 duration-300"
+          />
         </div>
       </div>
 
-      {/* Custom Swiper dot color styling */}
-      <style jsx global>{`
-        .swiper-pagination-bullet {
-          background-color: #d3c3a3; /* lighter gold for inactive */
-          opacity: 1;
-        }
-        .swiper-pagination-bullet-active {
-          background-color: #74613c; /* active dot */
-        }
-      `}</style>
-    </section>
+      {/* Right Swiper */}
+      <div className="w-full lg:w-[55%]">
+        <Swiper
+          spaceBetween={20}
+          pagination={{ clickable: true }}
+          navigation={true}
+          modules={[Pagination, Navigation]}
+          className="mySwiper"
+        >
+          {[1, 2, 3, 4].map((type) => (
+            <SwiperSlide key={type}>
+              <div className="p-4 sm:p-6 bg-white rounded-lg shadow-lg flex flex-col sm:flex-row gap-4 sm:gap-6 min-h-[370px] sm:min-h-[400px] justify-between">
+                <img
+                  src={`/layout${type + 1}.avif`}
+                  alt={`Layout ${type}`}
+                  className="w-full sm:w-60 object-contain rounded"
+                />
+                <div className="flex flex-col justify-between w-full text-center sm:text-left">
+                  <div className="space-y-2">
+                    <h3 className="text-sm font-bold text-gray-500">
+                      TYPE {type}
+                    </h3>
+                    <p className="text-lg font-semibold text-gray-800">
+                      {type === 4
+                        ? '4 BDR + Lounge + Garden View'
+                        : `${type + 1} BDR + LOUNGE + TERRACE`}
+                    </p>
+                    <p
+                      className={`font-semibold ${
+                        type === 4 ? 'text-green-600' : 'text-red-600'
+                      }`}
+                    >
+                      {type === 4 ? 'Available' : '(SOLD OUT)'}
+                    </p>
+                  </div>
+                  <div className="pt-4 text-sm text-gray-700 space-y-1">
+                    <p>
+                      Size:{' '}
+                      {type === 1
+                        ? '200'
+                        : type === 2
+                        ? '240'
+                        : type === 3
+                        ? '280'
+                        : '320'}{' '}
+                      SQ YARDS
+                    </p>
+                    <p>
+                      Built-up Area:{' '}
+                      {type === 1
+                        ? '1,500'
+                        : type === 2
+                        ? '2,200'
+                        : type === 3
+                        ? '2,600'
+                        : '2,900'} SQ FEET
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+    </div>
+  </div>
+
+  {/* Custom Swiper dot color styling */}
+  <style jsx global>{`
+    .swiper-pagination {
+      margin-top: 20px;
+      text-align: center;
+    }
+    .swiper-pagination-bullet {
+      background-color: #d3c3a3;
+      opacity: 1;
+      width: 10px;
+      height: 10px;
+      margin: 0 5px !important;
+    }
+    .swiper-pagination-bullet-active {
+      background-color: #74613c;
+    }
+  `}</style>
+</section>
+
 
        
 

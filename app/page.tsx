@@ -188,15 +188,15 @@ export default function Home() {
             className="list-disc list-inside space-y-2"
             style={{ fontFamily: `"Montserrat", sans-serif` }}
           >
-            <li>50% Open Areas</li>
+            <li>Surrounded by Forested Land</li>
             <li>Gated Secured Community</li>
-            <li>Power Backup</li>
-            <li>World-class Landscaping</li>
             <li>Water Bodies and Ponds</li>
-            <li>Lavish Club House</li>
-            <li>Swimming Pool</li>
+            <li>World-class Landscaping</li>
             <li>Dedicated Car Parking</li>
-            <li>Surrounded by forested lands</li>
+            <li>Lavish Club House</li>
+            <li>50% Open Areas</li>
+            <li>Swimming Pool</li>
+            <li>Power Backup</li>
           </ul>
         </div>
 
@@ -206,31 +206,26 @@ export default function Home() {
             className="font-semibold text-lg sm:text-xl mb-3"
             style={{ fontFamily: `"Cormorant Garamond", serif` }}
           >
-            Your Chalet
+            Your Bhowali Chalet
           </h3>
           <ul
             className="list-disc list-inside space-y-2"
             style={{ fontFamily: `"Montserrat", sans-serif` }}
           >
-            <li>3 & 4 side open Chalets</li>
-            <li>Private Garden with each Chalet</li>
-            <li>Ample Open Spaces</li>
-            <li>Fireplace with Large Sit-out</li>
-            <li>Jacuzzi (with 4 BDR Config)</li>
             <li>Barbeque Area</li>
-            <li>Panoramic valley and mountain views</li>
-            <li>Large Floor to Ceiling Glass</li>
             <li>Lavish Greenery</li>
+            <li>Pristine Open Spaces</li>
+            <li>3 & 4 Side Open Chalets</li>
+            <li>Jacuzzi (with 4 Bed Config)</li>
+            <li>Large Floor to Ceiling Glass</li>
+            <li>Fireplace with Large Sit-out</li>
+            <li>Panoramic Valley and Mountain</li>
+            <li>Private Garden with each Chalet</li>
           </ul>
         </div>
       </div>
 
-      <p
-        className="mt-8 text-sm sm:text-base text-[#74613c] text-center md:text-left"
-        style={{ fontFamily: `"Cormorant Garamond", serif` }}
-      >
-        Free Hold Land that will be registered on the Buyer&apos;s name
-      </p>
+     
     </div>
   </div>
 </section>
@@ -645,7 +640,7 @@ export default function Home() {
       className="text-xs sm:text-sm tracking-widest text-[#74613c] mb-8 text-center font-medium"
       style={{ fontFamily: `"Cormorant Garamond", serif` }}
     >
-      Know Who We Are & Why People Trust Us For Property Solutions
+      Know Who We Are & Why People Trust Us For Luxury Villas at Pristine Hills
     </p>
 
     {/* Description */}
@@ -653,10 +648,12 @@ export default function Home() {
       className="text-sm sm:text-base text-[#74613c] text-justify leading-relaxed"
       style={{ fontFamily: `"Montserrat", sans-serif` }}
     >
-      ADV Experiential is like a niche new area development company, with its head office in Gurgaon.
-      The organization’s primary goal is to create a differentiated experience for discerning second
-      home buyers in India, based on market research, understanding of the second home market, collective
-      experience, and teamwork.
+      Most pristine Bhowali Chalet project is a niche development, 
+      one of its kind in the lap of sprawling greens. As a specialized 
+      development organization, our primary goal is to create a differentiated 
+      experience for discerning second home buyers in India, based on market 
+      research, understanding of the second home market, collective experience,
+       and teamwork.
     </p>
   </div>
 </section>
@@ -690,11 +687,12 @@ export default function Home() {
           className="text-base md:text-lg leading-relaxed mb-6 "
           style={{ fontFamily: `"Montserrat",sans-serif` }}
         >
-          "My wife and I wanted a cottage in the Nainital area away from the buzz
-          for our journey towards post retirement.We loved
-          Bhowali Valley Chalets because it is specifically designed for people like
-          us. We can’t wait to go and spend our relaxed & peaceful life in a
-          pollution-free setting. We would highly recommend this project."
+          "My wife and I wanted a cottage in the Nainital area away
+           from the buzz for our journey towards post-retirement.
+            We loved Bhowali Valley Chalets because it is specifically
+             designed for people like us. We can’t wait to go and spend
+              our relaxed & peaceful life in a pollution-free setting.
+               We would highly recommend this project."
         </p>
         <p className="font-bold text-blue-400"></p>
         <p className="text-sm text-blue-200"></p>
@@ -706,10 +704,11 @@ export default function Home() {
           className="text-base md:text-lg leading-relaxed mb-6 "
           style={{ fontFamily: `"Montserrat",sans-serif` }}
         >
-          "What attracted me first to this project was the stunning design. The
-          concept has been well thought-out and addresses all the concerns that had
-          stopped me from buying a hill home before this. Dealings with the company
-          have been a pleasure as well – very professional and helpful."
+          "What attracted me first to this project was the stunning design. 
+         The concept has been well thought-out and addresses all the concerns 
+          that had stopped me from buying a hill home before this. Dealings with
+          the company have been a great experience – very professional and helpful
+           team, pleasure dealing with them.”
         </p>
         <p className="font-bold text-blue-400"></p>
         <p className="text-sm text-blue-200"></p>
